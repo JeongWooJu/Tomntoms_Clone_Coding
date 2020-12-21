@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/**
+ * 전체 화면 설정
+ * -------------------- */
+
+* {
+    font-family: "KoPubDotum", "NotoKR";
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/**
+ * 상단(로고 및 메뉴 바) 영역 지정
+ * -------------------- */
+.header {
+    width: 100%;
+    height: 135px;
+    background-color: pink;
+    position: fixed;
+}
+
+/**
+ * 로고 위치 지정 및 텍스트 화면 밖으로 조정
+ * -------------------- */
+.home-logo {
+    width: 95px;
+    height: 95px;
+    background: url("../img/logo.png") center center no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    text-indent: -10000px;
+}
+
+/**
+ * 상단 소메뉴 정렬
+ * -------------------- */
+.toolbar-1 {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 200px;
+    font-size: 14px;
+}
+
+.toolbar-1 li {
+    display: inline-block;
+    padding: 0 5px 0 0;
+    border-right: 1px solid #eee;
+}
+
+/**
+ * 메인 메뉴 정렬
+ * -------------------- */
+.toolbar-2 {
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 200px;
+}
+
+.toolbar-2 .menu-item {
+    display: inline-block;
+    padding: 0 0 0 20px;
+}
+
+/**
+ * 메뉴 펼쳐짐 처리
+ * -------------------- */
+.sub {
+    position: absolute;
+    z-index: 1000;
+    text-align: left;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.sub {
+    display: none;
+}
+
+
+
+/**
+ *
+ * -------------------- */
+
+/**
+ *
+ * -------------------- */

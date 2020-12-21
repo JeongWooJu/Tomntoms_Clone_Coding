@@ -1,0 +1,12 @@
+/**
+ * 회사 소개 구간 높이 설정
+ * -------------------- */
+.intro {
+    width: auto;
+    height: 800px;
+}
+
+.intro .intro-background {
+    height: 600px;
+    background: url("../img/section2_bg.jpg") center center no-repeat;
+}
