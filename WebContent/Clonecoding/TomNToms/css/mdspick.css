@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/**
+ * 추천 제품 영역 설정
+ * -------------------- */
+
+.mdspick {
+    padding-top: 70px;
+    width: auto;
+    max-width: 1440px;
+    margin: auto;
+    z-index: -10;
+}
+
+/**
+ * 추천 제품 타이틀 위치 설정
+ * -------------------- */
+.mdspick .mdspick-title {
+    display: block;
+    width: 558px;
+    margin: auto;
+
+}
+
+/**
+ * 추천 제품 타이틀 텍스트 제거
+ * -------------------- */
+.mdspick p {
+    text-indent: -10000px;
+}
+
+/**
+ * 배너가 움직일 영역 설정
+ * -------------------- */
+.mdspick .mdspick-banner {
+    margin: 40px 20px 0 20px;
+    z-index: -10;
+}
+
+/**
+ * 배너의 개별 항목 영역 지정
+ * 한번에 세 개의 항목이 보이도록 설정
+ * -------------------- */
+.mdspick .mdspick-banner li {
+    width: 33%;
+}
+
+/**
+ * 배너의 개별 항목 > 링크가 걸린 이미지 영역 지정
+ * -------------------- */
+.mdspick .mdspick-banner li a {
+    display: block;
+    height: 515px;
+}
+
+/**
+ * 배너의 개별 항목 > 이미지 지정
+ * -------------------- */
+
+.mdspick .mdspick-banner li .mdspick-item-1 {
+    background: url("../uploads/mdspick/1.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.mdspick .mdspick-banner li .mdspick-item-2 {
+    background: url("../uploads/mdspick/2.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.mdspick .mdspick-banner li .mdspick-item-3 {
+    background: url("../uploads/mdspick/3.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.mdspick .mdspick-banner li .mdspick-item-4 {
+    background: url("../uploads/mdspick/4.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.mdspick .mdspick-banner li .mdspick-item-5 {
+    background: url("../uploads/mdspick/5.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+/**
+ * 배너의 개별 항목을 설명할 텍스트 영역과 디자인 지정
+ * -------------------- */
+
+.mdspick .mdspick-banner li span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #444;
+    display: block;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    letter-spacing: -1px;
+}

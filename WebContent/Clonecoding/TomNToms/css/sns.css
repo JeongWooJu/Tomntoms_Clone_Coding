@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/**
+ * SNS 갤러리 영역 설정
+ * -------------------- */
+
+.sns {
+    padding-top: 70px;
+    width: auto;
+    max-width: 1440px;
+    margin: auto;
+    z-index: -10;
+}
+
+/**
+ * SNS 갤러리 타이틀 위치 설정
+ * -------------------- */
+.sns .sns-title {
+    display: block;
+    width: 450px;
+    margin: auto;
+
+}
+
+/**
+ * SNS 갤러리 타이틀 텍스트 제거
+ * -------------------- */
+.sns p {
+    text-indent: -10000px;
+}
+
+/**
+ * SNS 갤러리 이미지 영역 설정
+ * -------------------- */
+.sns .sns-gallery {
+    margin: 40px 20px 0 20px;
+}
+
+/**
+ * SNS 갤러리의 개별 항목 영역 지정
+ * -------------------- */
+.sns .sns-gallery li a {
+    width: 20%;
+    display: block;
+    float: left;
+    height: 256px;
+
+}
+
+/**
+ * 배너의 개별 항목 > 이미지 지정
+ * -------------------- */
+
+.sns .sns-gallery li .sns-item-1 {
+    background: url("../uploads/sns/1.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-2 {
+    background: url("../uploads/sns/2.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-3 {
+    background: url("../uploads/sns/3.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-4 {
+    background: url("../uploads/sns/4.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-5 {
+    background: url("../uploads/sns/5.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-6 {
+    background: url("../uploads/sns/6.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-7 {
+    background: url("../uploads/sns/7.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-8 {
+    background: url("../uploads/sns/8.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-9 {
+    background: url("../uploads/sns/9.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sns .sns-gallery li .sns-item-10 {
+    background: url("../uploads/sns/10.jpg") center center no-repeat;
+    background-size: cover;
+}

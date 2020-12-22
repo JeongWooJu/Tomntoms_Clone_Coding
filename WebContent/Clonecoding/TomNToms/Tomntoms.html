@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="css/mdspick.css" />
     <link rel="stylesheet" type="text/css" href="css/sns.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/path/css/KoPubDotum.css">
     <!-- 브라우저에 표시될 문서 제목 -->
     <title>TOM N TOMS</title>
 </head>
@@ -28,7 +31,7 @@
 <body>
     <div class="container">
         <!-- A (로고 및 메뉴 바) -->
-        <div class="header">
+        <div class="header clearfix">
             <a href="#" class="home-logo">TOM N TOMS</a>
             <ul class="toolbar-1">
                 <li><a href="#">매장찾기</a></li>
@@ -109,11 +112,15 @@
             </ul>
         </div>
         <!-- B (이벤트 배너 및 공지사항) -->
-        <div class="banner">
-            <div class="horizontal-container">
-                <ul>
-                    <li><a href="#"></a></li>
-                </ul>
+        <div class="banner clearfix">
+            <div class="horizontal-container fade">
+                <a href="#"><img src="uploads/banner/1_lg.jpg" /></a>
+                <a href="#"><img src="uploads/banner/2_lg.jpg" /></a>
+                <a href="#"><img src="uploads/banner/3_lg.jpg" /></a>
+                <a href="#"><img src="uploads/banner/4_lg.jpg" /></a>
+                <a href="#"><img src="uploads/banner/5_lg.jpg" /></a>
+                <a href="#"><img src="uploads/banner/6_lg.jpg" /></a>
+                <a href="#"><img src="uploads/banner/7_lg.jpg" /></a>
             </div>
             <div class="vertical-container">
                 <ul>
@@ -122,62 +129,62 @@
             </div>
         </div>
         <!-- C (메뉴 배너) -->
-        <div class="menu">
-            <p>TOM N TOMS MENU<img src="img/section_tit1.png"></p>
-            <ul>
-                <li><a href="#">뱅쇼 2종(레드&화이트)</a></li>
-                <li><a href="#">솔티 카라멜 레볼루션 3종</a></li>
-                <li><a href="#">탐의보감 3종</a></li>
-                <li><a href="#">고르곤졸라&디아블로 피자</a></li>
-                <li><a href="#">블랙 프레즐 출시</a></li>
+        <div class="menu clearfix">
+            <p>TOM N TOMS MENU<img src="img/section_tit1.png" class="menu-title" /></p>
+            <ul class="menu-banner autoplay-1">
+                <li><a href="#" class="menu-item-1"></a><span>뱅쇼 2종(레드&화이트)</span></li>
+                <li><a href="#" class="menu-item-2"></a><span>솔티 카라멜 레볼루션 3종</span></li>
+                <li><a href="#" class="menu-item-3"></a><span>탐의보감 3종</span></li>
+                <li><a href="#" class="menu-item-4"></a><span>고르곤졸라&디아블로 피자</span></li>
+                <li><a href="#" class="menu-item-5"></a><span>블랙 프레즐 출시</span></li>
             </ul>
         </div>
         <!-- D (회사 소개) -->
-        <div class="intro">
+        <div class="intro clearfix">
             <div class="intro-background">
-                <span>대한민국 대표 커피 브랜드<br /></span>
-                <img src="img/nav_logo.svg" /><br />
-                <span>
-                    탐앤탐스는 오랜 노하우로 국내외 커피 시장을 선도하며<br />
-                    스페셜티 커피와 갓 구운 따뜻한 프레즐, 문화가 융합된 특별한 공간으로<br />
-                    지금 대한민국을 비롯해 전 세계에서 사랑받는 브랜드입니다.
-                </span>
-                <ul>
-                    <li><a href="#">가맹문의</a></li>
-                    <li><a href="#">브랜드 소개</a></li>
-                    <li><a href="#">신규매장 소개</a></li>
-                </ul>
+                <div class="intro-box">
+                    <span class="intro-subtitle">대한민국 대표 스페셜티 커피 브랜드<br /></span>
+                    <img src="img/tomntoms_tit_bold.svg" class="intro-title" /><br />
+                    <span class="intro-content">
+                        탐앤탐스는 오랜 노하우로 국내외 커피 시장을 선도하며 스페셜티 커피와 갓 구운 따뜻한 프레즐, 문화가 융합된 특별한 공간으로 지금 대한민국을 비롯해 전 세계에서 사랑받는 브랜드입니다.
+                    </span>
+                    <ul class="intro-list">
+                        <li><a href="#" class="intro-item-1">가맹문의</a></li>
+                        <li><a href="#" class="intro-item-2">브랜드 소개</a></li>
+                        <li><a href="#" class="intro-item-3">신규매장 소개</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- E (추천 제품) -->
-        <div class="mdspick">
-            <p>TOM N TOMS MD's PICK<img src="img/section_tit2.png"></p>
-            <ul>
-                <li><a href="#">2021 플래너 with tenbyten</a></li>
-                <li><a href="#">와이드 텀블러 (500ml)</a></li>
-                <li><a href="#">허브티 3종 세트</a></li>
-                <li><a href="#">꼰대라떼 스틱</a></li>
-                <li><a href="#">핸드드립 커피 3종 세트</a></li>
+        <div class="mdspick clearfix">
+            <p>TOM N TOMS MD's PICK<img src="img/section_tit2.png" class="mdspick-title" /></p>
+            <ul class="mdspick-banner autoplay-2">
+                <li><a href="#" class="mdspick-item-1"></a><span>2021 플래너 with tenbyten</span></li>
+                <li><a href="#" class="mdspick-item-2"></a><span>와이드 텀블러 (500ml)</span></li>
+                <li><a href="#" class="mdspick-item-3"></a><span>허브티 3종 세트</span></li>
+                <li><a href="#" class="mdspick-item-4"></a><span>꼰대라떼 스틱</span></li>
+                <li><a href="#" class="mdspick-item-5"></a><span>핸드드립 커피 3종 세트</span></li>
             </ul>
         </div>
         <!-- F (SNS 갤러리) -->
-        <p>TOM N TOMS SNS<img src="img/section_tit3.png"></p>
-        <div class="sns">
+        <div class="sns clearfix">
+            <p>TOM N TOMS SNS<img src="img/section_tit3.png" class="sns-title" /></p>
             <ul class="sns-gallery">
-                <li><a href="#"><img src="uploads/sns/1.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/2.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/3.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/4.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/5.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/6.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/7.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/8.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/9.jpg"></a></li>
-                <li><a href="#"><img src="uploads/sns/10.jpg"></a></li>
+                <li><a href="#" class="sns-item-1"></a></li>
+                <li><a href="#" class="sns-item-2"></a></li>
+                <li><a href="#" class="sns-item-3"></a></li>
+                <li><a href="#" class="sns-item-4"></a></li>
+                <li><a href="#" class="sns-item-5"></a></li>
+                <li><a href="#" class="sns-item-6"></a></li>
+                <li><a href="#" class="sns-item-7"></a></li>
+                <li><a href="#" class="sns-item-8"></a></li>
+                <li><a href="#" class="sns-item-9"></a></li>
+                <li><a href="#" class="sns-item-10"></a></li>
             </ul>
         </div>
         <!-- G (카피라이트 및 사이트맵) -->
-        <div class="footer">
+        <div class="footer clearfix">
             <div>
                 <p>고객만족센터</p>
                 <p>02. 3412. 0781</p>
@@ -199,11 +206,38 @@
         </div>
     </div>
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
     <script type="text/javascript">
     $(function() {
         $(".menu-item").hover(function() {
             $(this).find(".sub").slideToggle(300);
         });
+    });
+
+    $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        cssEase: 'linear'
+    });
+
+    $('.autoplay-1').slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000
+    });
+
+    $('.autoplay-2').slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000
     });
     </script>
 </body>

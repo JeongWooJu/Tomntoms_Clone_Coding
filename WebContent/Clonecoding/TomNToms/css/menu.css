@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/**
+ * 메뉴 영역 설정
+ * -------------------- */
+
+.menu {
+    padding-top: 70px;
+    width: auto;
+    max-width: 1440px;
+    margin: auto;
+    z-index: -10;
+}
+
+/**
+ * 메뉴 타이틀 위치 설정
+ * -------------------- */
+.menu .menu-title {
+    display: block;
+    width: 458px;
+    margin: auto;
+
+}
+
+/**
+ * 메뉴 타이틀 텍스트 제거
+ * -------------------- */
+.menu p {
+    text-indent: -10000px;
+}
+
+/**
+ * 배너가 움직일 영역 설정
+ * -------------------- */
+.menu .menu-banner {
+    margin: 40px 20px 0 20px;
+    z-index: -10;
+}
+
+/**
+ * 배너의 개별 항목 영역 지정
+ * 한번에 세 개의 항목이 보이도록 설정
+ * -------------------- */
+.menu .menu-banner li {
+    width: 33%;
+}
+
+/**
+ * 배너의 개별 항목 > 링크가 걸린 이미지 영역 지정
+ * -------------------- */
+.menu .menu-banner li a {
+    display: block;
+    height: 515px;
+}
+
+/**
+ * 배너의 개별 항목 > 이미지 지정
+ * -------------------- */
+
+.menu .menu-banner li .menu-item-1 {
+    background: url("../uploads/menu/1.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.menu .menu-banner li .menu-item-2 {
+    background: url("../uploads/menu/2.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.menu .menu-banner li .menu-item-3 {
+    background: url("../uploads/menu/3.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.menu .menu-banner li .menu-item-4 {
+    background: url("../uploads/menu/4.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.menu .menu-banner li .menu-item-5 {
+    background: url("../uploads/menu/5.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+/**
+ * 배너의 개별 항목을 설명할 텍스트 영역과 디자인 지정
+ * -------------------- */
+
+.menu .menu-banner li span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #444;
+    display: block;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    letter-spacing: -1px;
+}

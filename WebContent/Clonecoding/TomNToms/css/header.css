@@ -1,11 +1,16 @@
 @charset "utf-8";
+@import url('KoPubDotum.css');
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /**
  * 전체 화면 설정
  * -------------------- */
 
 * {
-    font-family: "KoPubDotum", "NotoKR";
+    font-family: "KoPub Dotum";
+    font-stretch: extra-condensed;
+    font-weight: 300;
+    letter-spacing: -1px;
     list-style: none;
     text-decoration: none;
     color: #000;
@@ -23,9 +28,19 @@ body {
  * -------------------- */
 .header {
     width: 100%;
-    height: 135px;
-    background-color: pink;
+    height: 137px;
+    background-color: white;
     position: fixed;
+}
+
+/**
+ * 한 구역 설정이 끝날 때 float 속성 제거
+ * -------------------- */
+.clearfix:after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
 }
 
 /**
@@ -37,7 +52,8 @@ body {
     background: url("../img/logo.png") center center no-repeat;
     position: absolute;
     top: 20px;
-    left: 100px;
+    left: 252px;
+    z-index: 100000;
     text-indent: -10000px;
 }
 
@@ -46,15 +62,21 @@ body {
  * -------------------- */
 .toolbar-1 {
     text-align: right;
-    margin-top: 20px;
-    margin-right: 200px;
-    font-size: 14px;
+    margin-top: 28px;
+    margin-right: 252px;
+    font-size: 13.5px;
 }
 
 .toolbar-1 li {
     display: inline-block;
-    padding: 0 5px 0 0;
+    padding: 0 10px 0 8px;
     border-right: 1px solid #eee;
+}
+
+.toolbar-1 li:last-child {
+    display: inline-block;
+    padding: 0 0 0 8px;
+    border-right: 0px;
 }
 
 /**
@@ -62,13 +84,16 @@ body {
  * -------------------- */
 .toolbar-2 {
     text-align: right;
-    margin-top: 40px;
-    margin-right: 200px;
+    margin-top: 30px;
+    margin-right: 252px;
+    font-size: 20px;
+
+    letter-spacing: -1px;
 }
 
 .toolbar-2 .menu-item {
     display: inline-block;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 40px;
 }
 
 /**
