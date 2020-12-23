@@ -9,7 +9,6 @@
     width: auto;
     max-width: 1440px;
     margin: auto;
-    z-index: -10;
 }
 
 /**
@@ -43,60 +42,32 @@
     width: 20%;
     display: block;
     float: left;
-    height: 256px;
 
 }
 
 /**
- * 배너의 개별 항목 > 이미지 지정
+ * 각 항목 이미지를 일정한 사이즈로 크롭
  * -------------------- */
-
-.sns .sns-gallery li .sns-item-1 {
-    background: url("../uploads/sns/1.jpg") center center no-repeat;
-    background-size: cover;
+.sns .sns-gallery li a .thumbnail {
+    position: relative;
+    padding-top: 91.43%;
+    overflow: hidden;
 }
 
-.sns .sns-gallery li .sns-item-2 {
-    background: url("../uploads/sns/2.jpg") center center no-repeat;
-    background-size: cover;
+.sns .sns-gallery li a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+    transition: all ease 0.5s;
 }
 
-.sns .sns-gallery li .sns-item-3 {
-    background: url("../uploads/sns/3.jpg") center center no-repeat;
-    background-size: cover;
-}
-
-.sns .sns-gallery li .sns-item-4 {
-    background: url("../uploads/sns/4.jpg") center center no-repeat;
-    background-size: cover;
-}
-
-.sns .sns-gallery li .sns-item-5 {
-    background: url("../uploads/sns/5.jpg") center center no-repeat;
-    background-size: cover;
-}
-
-.sns .sns-gallery li .sns-item-6 {
-    background: url("../uploads/sns/6.jpg") center center no-repeat;
-    background-size: cover;
-}
-
-.sns .sns-gallery li .sns-item-7 {
-    background: url("../uploads/sns/7.jpg") center center no-repeat;
-    background-size: cover;
-}
-
-.sns .sns-gallery li .sns-item-8 {
-    background: url("../uploads/sns/8.jpg") center center no-repeat;
-    background-size: cover;
-}
-
-.sns .sns-gallery li .sns-item-9 {
-    background: url("../uploads/sns/9.jpg") center center no-repeat;
-    background-size: cover;
-}
-
-.sns .sns-gallery li .sns-item-10 {
-    background: url("../uploads/sns/10.jpg") center center no-repeat;
-    background-size: cover;
+/**
+ * 마우스 오버 시 이미지 사이즈가 확대되는 애니메이션
+ * -------------------- */
+.sns .sns-gallery li a img:hover {
+    transform: scale(1.1);
 }

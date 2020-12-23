@@ -22,7 +22,6 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="/path/css/KoPubDotum.css">
     <!-- 브라우저에 표시될 문서 제목 -->
     <title>TOM N TOMS</title>
 </head>
@@ -132,11 +131,21 @@
         <div class="menu clearfix">
             <p>TOM N TOMS MENU<img src="img/section_tit1.png" class="menu-title" /></p>
             <ul class="menu-banner autoplay-1">
-                <li><a href="#" class="menu-item-1"></a><span>뱅쇼 2종(레드&화이트)</span></li>
-                <li><a href="#" class="menu-item-2"></a><span>솔티 카라멜 레볼루션 3종</span></li>
-                <li><a href="#" class="menu-item-3"></a><span>탐의보감 3종</span></li>
-                <li><a href="#" class="menu-item-4"></a><span>고르곤졸라&디아블로 피자</span></li>
-                <li><a href="#" class="menu-item-5"></a><span>블랙 프레즐 출시</span></li>
+                <li id="menu-item-1"><a href="#" class="menu-item-1">
+                        <div class="overlay" id="overlay-1"></div>
+                    </a><span>뱅쇼 2종(레드&화이트)</span></li>
+                <li id="menu-item-2"><a href="#" class="menu-item-2">
+                        <div class="overlay" id="overlay-2"></div>
+                    </a><span>솔티 카라멜 레볼루션 3종</span></li>
+                <li id="menu-item-3"><a href="#" class="menu-item-3">
+                        <div class="overlay" id="overlay-3"></div>
+                    </a><span>탐의보감 3종</span></li>
+                <li id="menu-item-4"><a href="#" class="menu-item-4">
+                        <div class="overlay" id="overlay-4"></div>
+                    </a><span>고르곤졸라&디아블로 피자</span></li>
+                <li id="menu-item-5"><a href="#" class="menu-item-5">
+                        <div class="overlay" id="overlay-5"></div>
+                    </a><span>블랙 프레즐 출시</span></li>
             </ul>
         </div>
         <!-- D (회사 소개) -->
@@ -160,58 +169,121 @@
         <div class="mdspick clearfix">
             <p>TOM N TOMS MD's PICK<img src="img/section_tit2.png" class="mdspick-title" /></p>
             <ul class="mdspick-banner autoplay-2">
-                <li><a href="#" class="mdspick-item-1"></a><span>2021 플래너 with tenbyten</span></li>
-                <li><a href="#" class="mdspick-item-2"></a><span>와이드 텀블러 (500ml)</span></li>
-                <li><a href="#" class="mdspick-item-3"></a><span>허브티 3종 세트</span></li>
-                <li><a href="#" class="mdspick-item-4"></a><span>꼰대라떼 스틱</span></li>
-                <li><a href="#" class="mdspick-item-5"></a><span>핸드드립 커피 3종 세트</span></li>
+                <li><a href="#" class="mdspick-item-1">
+                        <div class="overlay"></div>
+                    </a><span>2021 플래너 with tenbyten</span></li>
+                <li><a href="#" class="mdspick-item-2">
+                        <div class="overlay"></div>
+                    </a><span>와이드 텀블러 (500ml)</span></li>
+                <li><a href="#" class="mdspick-item-3">
+                        <div class="overlay"></div>
+                    </a><span>허브티 3종 세트</span></li>
+                <li><a href="#" class="mdspick-item-4">
+                        <div class="overlay"></div>
+                    </a><span>꼰대라떼 스틱</span></li>
+                <li><a href="#" class="mdspick-item-5">
+                        <div class="overlay"></div>
+                    </a><span>핸드드립 커피 3종 세트</span></li>
             </ul>
         </div>
         <!-- F (SNS 갤러리) -->
         <div class="sns clearfix">
             <p>TOM N TOMS SNS<img src="img/section_tit3.png" class="sns-title" /></p>
             <ul class="sns-gallery">
-                <li><a href="#" class="sns-item-1"></a></li>
-                <li><a href="#" class="sns-item-2"></a></li>
-                <li><a href="#" class="sns-item-3"></a></li>
-                <li><a href="#" class="sns-item-4"></a></li>
-                <li><a href="#" class="sns-item-5"></a></li>
-                <li><a href="#" class="sns-item-6"></a></li>
-                <li><a href="#" class="sns-item-7"></a></li>
-                <li><a href="#" class="sns-item-8"></a></li>
-                <li><a href="#" class="sns-item-9"></a></li>
-                <li><a href="#" class="sns-item-10"></a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/1.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/2.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/3.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/4.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/5.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/6.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/7.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/8.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/9.jpg" /></div>
+                    </a></li>
+                <li><a href="#" class="sns-item-1">
+                        <div class="thumbnail"><img src="uploads/sns/10.jpg" /></div>
+                    </a></li>
             </ul>
         </div>
         <!-- G (카피라이트 및 사이트맵) -->
         <div class="footer clearfix">
-            <div>
-                <p>고객만족센터</p>
-                <p>02. 3412. 0781</p>
-            </div>
-            <div>
-                <span>회사소개
-                    채용안내
-                    프랜차이즈
-                    계열사소개
-                    공지사항
-                    고객만족센터
-                    찾아오시는 길
-                    가맹점 전용 게시판
-                </span>
-                <p>서울특별시 강남구 논현로 163길 10 베드로빌딩 2F (구 : 신사동 570-6) 대표 : 김도균</p>
-                <p>사업자등록번호 : 215-86-65050 개인정보 책임자 : 이동규 TEL. 02-3412-0781 FAX. 02-3412-1907</p>
-                <address>COPYRIGHT&nbsp;&copy;&nbsp;2015 TOM N TOMS COFFEE. ALL RIGHTS RESERVED.</address>
+            <div class="footer-box">
+                <div class="contact">
+                    <p>고객만족센터</p>
+                    <p class="tel">02. 3412. 0781</p>
+                </div>
+                <div class="copy-box">
+                    <span class="sitemap">
+                        <a href="#">회사소개</a>&nbsp;·&nbsp;
+                        <a href="#">채용안내</a>&nbsp;·&nbsp;
+                        <a href="#">프랜차이즈</a>&nbsp;·&nbsp;
+                        <a href="#">계열사소개</a>&nbsp;·&nbsp;
+                        <a href="#">공지사항</a><br />
+                        <a href="#">고객만족센터</a>&nbsp;·&nbsp;
+                        <a href="#">찾아오시는 길</a>&nbsp;·&nbsp;
+                        <a href="#">가맹점 전용 게시판</a><br />&nbsp;
+                    </span>
+                    <span class="loc">
+                        <p>서울특별시 강남구 논현로 163길 10 베드로빌딩 2F (구 : 신사동 570-6) 대표 : 김도균</p>
+                        <p>사업자등록번호 : 215-86-65050 개인정보 책임자 : 이동규 TEL. 02-3412-0781 FAX. 02-3412-1907</p><br />
+                        <address>COPYRIGHT&nbsp;&copy;&nbsp;2015 TOM N TOMS COFFEE. ALL RIGHTS RESERVED.</address>
+                    </span>
+                </div>
+                <div class="sns-contact">
+                    <p>Follow us</p>
+                    <ul>
+                        <li><a href="https://www.instagram.com/tomntoms_coffee/"><img src="img/sns_instagram.png"></a></li>
+                        <li><a href="https://web.facebook.com/tomntomscoffee?_rdc=1&_rdr"><img src="img/sns_facebook.png"></a></li>
+                        <li><a href="https://www.youtube.com/c/tomntoms_story/featured"><img src="img/sns_youtube.png"></a></li>
+                        <li><a href="http://blog.naver.com/tomntoms01"><img src="img/sns_blog.png"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
     <script type="text/javascript">
+    /*
     $(function() {
         $(".menu-item").hover(function() {
             $(this).find(".sub").slideToggle(300);
         });
+    });*/
+    $(function() {
+        $('#menu-item-1').hover(
+            function(e) {
+                $('#overlay-1').fadeIn(300);
+                $('#overlay-1').animate({
+                    width: '94.62%',
+                    height: '95.14%',
+                    opacity: '.3'
+                }, 300);
+            },
+            function(e) {
+                $('#overlay-1').animate({
+                    width: '100%',
+                    height: '100%',
+                    opacity: '0'
+                }, 300);
+            });
     });
 
     $('.fade').slick({
@@ -229,7 +301,7 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 3000
     });
 
     $('.autoplay-2').slick({
@@ -237,7 +309,7 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 3000
     });
     </script>
 </body>

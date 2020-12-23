@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/**
+ * 하단 영역 설정
+ * -------------------- */
+.footer {
+    width: auto;
+    height: 375px;
+    margin-top: 130px;
+    background-color: #efefef;
+}
+
+.footer .footer-box {
+    display: block;
+    padding: 90px 252px;
+}
+
+/**
+ * 고객 센터 안내 영역 설정
+ * -------------------- */
+.footer .contact {
+    display: block;
+    width: 28%;
+    float: left;
+}
+
+/**
+ * 고객 센터 안내 텍스트 디자인 및 위치 조정
+ * -------------------- */
+
+.footer .contact p {
+    font-family: 'Roboto', sans-serif;
+    color: #572A31;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%;
+}
+
+.footer .contact .tel {
+
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 200%;
+}
+
+/**
+ * 사이트맵, 회사 위치 및 연락처, 카피라이트 영역 설정
+ * -------------------- */
+.footer .copy-box {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 44%;
+    float: left;
+}
+
+/**
+ * 사이트맵, 회사 위치 및 연락처, 카피라이트 디자인 및 위치 설정
+ * -------------------- */
+
+.footer .sitemap,
+.footer .sitemap a {
+    color: #572A31;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%;
+}
+
+.footer .loc p,
+address {
+
+    color: #777;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 180%;
+    font-style: normal;
+}
+
+.footer .loc address {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+
+/**
+ * 공식 sns 목록 영역 설정
+ * -------------------- */
+.footer .sns-contact {
+    display: block;
+    width: 250px;
+    float: right;
+}
+
+/**
+ * Follow us 글씨 디자인 및 상세 위치 조정
+ * -------------------- */
+
+.footer .sns-contact p {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    float: left;
+    position: relative;
+    top: 11px;
+}
+
+/**
+ * 아이콘 정렬 및 여백 조정
+ * -------------------- */
+
+.footer .sns-contact ul {
+    display: block;
+    float: right;
+    position: relative;
+}
+
+
+.footer .sns-contact ul li {
+    display: block;
+    float: left;
+    padding: 3.5px;
+}
+
+.footer .sns-contact ul li:last-child {
+    padding-right: 0;
+}

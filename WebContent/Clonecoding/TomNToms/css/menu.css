@@ -9,7 +9,6 @@
     width: auto;
     max-width: 1440px;
     margin: auto;
-    z-index: -10;
 }
 
 /**
@@ -34,7 +33,6 @@
  * -------------------- */
 .menu .menu-banner {
     margin: 40px 20px 0 20px;
-    z-index: -10;
 }
 
 /**
@@ -43,14 +41,32 @@
  * -------------------- */
 .menu .menu-banner li {
     width: 33%;
+    display: block;
 }
 
 /**
  * 배너의 개별 항목 > 링크가 걸린 이미지 영역 지정
  * -------------------- */
 .menu .menu-banner li a {
+    position: relative;
+    padding-top: 110.75%;
     display: block;
-    height: 515px;
+}
+
+/**
+ * 배너의 개별 항목 > 이미지 위에 마우스 오버 시 생성되는 박스 지정
+ * -------------------- */
+.menu .menu-banner li a .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 1.5px solid #fff;
+    display: none;
 }
 
 /**
@@ -88,11 +104,12 @@
 
 .menu .menu-banner li span {
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     color: #444;
     display: block;
-    margin: 40px auto 0 auto;
+    line-height: 100px;
     text-align: center;
     letter-spacing: -1px;
+    width: auto;
 }
