@@ -262,13 +262,8 @@
     </div>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js?time=<%=System.currentTimeMillis()%>"></script>
     <script type="text/javascript">
-    /*
-    $(function() {
-        $(".menu-item").hover(function() {
-            $(this).find(".sub").slideToggle(300);
-        });
-    });*/
     $(function() {
         $('#menu-item-1').hover(
             function(e) {

@@ -39,7 +39,7 @@
  * 배너의 개별 항목 영역 지정
  * 한번에 세 개의 항목이 보이도록 설정
  * -------------------- */
-.menu .menu-banner li {
+.menu .menu-banner .menu-element {
     width: 33%;
     display: block;
 }
@@ -47,7 +47,7 @@
 /**
  * 배너의 개별 항목 > 링크가 걸린 이미지 영역 지정
  * -------------------- */
-.menu .menu-banner li a {
+.menu .menu-banner .menu-element a {
     position: relative;
     padding-top: 110.75%;
     display: block;
@@ -66,7 +66,7 @@
     height: 100%;
     margin: auto;
     border: 1.5px solid #fff;
-    display: none;
+    opacity: 0;
 }
 
 /**

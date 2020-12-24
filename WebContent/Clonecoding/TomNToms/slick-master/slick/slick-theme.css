@@ -22,16 +22,17 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 40%;
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 36px;
+    height: 36px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+    transform: scale(0.6);
 
     cursor: pointer;
 
@@ -39,6 +40,7 @@
     border: none;
     outline: none;
     background: transparent;
+    z-index: 10;
 }
 
 .slick-prev:hover,
@@ -64,60 +66,56 @@
 
 .slick-prev:before,
 .slick-next:before {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*
 .slick-prev {
-    left: -25px;
+    left: 6px;
 }
 
 [dir='rtl'] .slick-prev {
-    right: -25px;
+    right: 6px;
     left: auto;
 }
 
 .slick-prev:before {
-    content: '←';
+    content: url('E:/JeongWooju/06_JAVA_WEB/Tomntoms/WebContent/Clonecoding/TomNToms/img/menu_prev.png');
 }
 
 [dir='rtl'] .slick-prev:before {
-    content: '→';
+    content: url('E:/JeongWooju/06_JAVA_WEB/Tomntoms/WebContent/Clonecoding/TomNToms/img/menu_next.png');
 }
 
 .slick-next {
-    right: -25px;
+    right: 6px;
 }
 
 [dir='rtl'] .slick-next {
     right: auto;
-    left: -25px;
+    left: 6px;
 }
 
 .slick-next:before {
-    content: '→';
+    content: url('E:/JeongWooju/06_JAVA_WEB/Tomntoms/WebContent/Clonecoding/TomNToms/img/menu_next.png');
 }
 
 [dir='rtl'] .slick-next:before {
-    content: '←';
-}
-*/
-/* Dots */
-.slick-dotted.slick-slider {
-    margin-bottom: 30px;
+    content: url('E:/JeongWooju/06_JAVA_WEB/Tomntoms/WebContent/Clonecoding/TomNToms/img/menu_prev.png');
 }
 
-.slick-dots {
+/* Dots */
+.slick-dotted.slick-slider {
+    /*margin-bottom: 30px;*/
+}
+
+.slick-bars {
     position: absolute;
-    bottom: 50px;
+    bottom: 42px;
 
     display: block;
 
@@ -126,15 +124,16 @@
     margin: 0;
 
     list-style: none;
+    overflow: hidden;
 
 
 }
 
-.slick-dots li {
+.slick-bars li {
     position: relative;
 
     display: inline-block;
-
+    left: 312px;
     width: 54px;
     height: 2px;
     margin: 0 3px;
@@ -143,7 +142,7 @@
     cursor: pointer;
 }
 
-.slick-dots li button {
+.slick-bars li button {
     font-size: 0;
     line-height: 0;
 
@@ -161,17 +160,17 @@
     background: transparent;
 }
 
-.slick-dots li button:hover,
-.slick-dots li button:focus {
+.slick-bars li button:hover,
+.slick-bars li button:focus {
     outline: none;
 }
 
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
+.slick-bars li button:hover:before,
+.slick-bars li button:focus:before {
     opacity: 1;
 }
 
-.slick-dots li button:before {
+.slick-bars li button:before {
     font-family: 'slick';
 
     font-size: 27px;
@@ -194,7 +193,83 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-dots li.slick-active button:before {
+.slick-bars li.slick-active button:before {
     opacity: 1;
     color: black;
+}
+
+.slick-dots {
+    position: absolute;
+    top: -60px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+.slick-dots li {
+    position: relative;
+    left: 615px;
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    padding: 0 2px;
+
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    padding: 0;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 16px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    content: '•';
+    text-align: center;
+    color: #ccc;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #572A31;
 }
