@@ -36,6 +36,12 @@ body {
 
 }
 
+.titlebar {
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+}
+
 /**
  * 한 구역 설정이 끝날 때 float 속성 제거
  * -------------------- */
@@ -55,7 +61,7 @@ body {
     background: url("../img/logo.png") center center no-repeat;
     position: absolute;
     top: 20px;
-    left: 252px;
+    padding-left: 20px;
     z-index: 100000;
     text-indent: -10000px;
 }
@@ -66,7 +72,7 @@ body {
 .toolbar-1 {
     text-align: right;
     margin-top: 28px;
-    margin-right: 252px;
+    padding-right: 20px;
     font-size: 13.5px;
 }
 
@@ -82,13 +88,17 @@ body {
     border-right: 0px;
 }
 
+.toolbar-1 li:hover {
+    color: #572A31;
+}
+
 /**
  * 메인 메뉴 정렬
  * -------------------- */
 .toolbar-2 {
     text-align: right;
     margin-top: 30px;
-    margin-right: 252px;
+    padding-right: 20px;
     font-size: 20px;
     letter-spacing: -1px;
 }
@@ -98,13 +108,50 @@ body {
     padding: 0 0 0 40px;
 }
 
+.toolbar-2 .menu-item>a:hover {
+    color: #572A31;
+}
+
 /**
  * 메뉴 펼쳐짐 처리
  * -------------------- */
 .sub {
     position: absolute;
-    z-index: 1000;
+    top: 40px;
+    left: 50%;
+    transform: translate(-38%, 0%);
+    z-index: 2000;
     text-align: left;
+    line-height: 160%;
+    float: left;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.sub-box {
+    display: inline-block;
+    float: left;
+}
+
+.sub>li>a {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sub>.sub-box>li>a {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sub>.sub-box>li>ul>li>a {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
 }
 
 .menu-item {
@@ -118,7 +165,7 @@ body {
 
 
 /**
- *
+ * 서브 메뉴 영역 설정
  * -------------------- */
 
 /**
