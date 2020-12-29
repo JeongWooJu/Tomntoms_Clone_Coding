@@ -112,3 +112,25 @@
     text-align: center;
     letter-spacing: -1px;
 }
+
+/**
+ * 추천 제품 배너 > 슬라이드 번호와 재생 버튼 위치 조정
+ * -------------------- */
+.mdspick .slider-box {
+    width: auto;
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+    top: -631px;
+    text-align: right;
+}
+
+#mdspick {
+    position: absolute;
+    right: 190px;
+    top: -1px;
+}
+
+.mdspick-plugin {
+    right: 0px;
+}

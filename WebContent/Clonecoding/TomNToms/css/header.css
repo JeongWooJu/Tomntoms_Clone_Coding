@@ -108,12 +108,16 @@ body {
     padding: 0 0 0 40px;
 }
 
+/**
+ * 메인 메뉴 마우스 오버 시 폰트 색상 변경
+ * -------------------- */
+
 .toolbar-2 .menu-item>a:hover {
     color: #572A31;
 }
 
 /**
- * 메뉴 펼쳐짐 처리
+ * 서브 메뉴 영역 설정
  * -------------------- */
 .sub {
     position: absolute;
@@ -123,24 +127,30 @@ body {
     z-index: 2000;
     text-align: left;
     line-height: 160%;
-    float: left;
     padding: 40px;
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    float: right;
+    white-space: nowrap;
     overflow: auto;
 }
 
 .sub-box {
     display: inline-block;
-    float: left;
+    text-align: left;
+    margin-right: 20px;
+    vertical-align: top;
 }
 
-.sub>li>a {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+.sub-box:last-child {
+    margin-right: 0;
 }
 
+/**
+ * 서브 메뉴 폰트 설정
+ * -------------------- */
+
+.sub>li>a,
 .sub>.sub-box>li>a {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
@@ -154,20 +164,26 @@ body {
     color: #999;
 }
 
+/**
+ * 서브 메뉴 마우스 오버 시 밑줄 처리
+ * -------------------- */
+
+.sub a:hover {
+    text-decoration: underline;
+}
+
+/**
+ * 서브 메뉴 위치 조정을 위한 상위 메뉴 position 부여
+ * -------------------- */
+
 .menu-item {
     position: relative;
 }
 
+/**
+ * 마우스 오버 전에 서브 메뉴 숨김 처리
+ * -------------------- */
+
 .sub {
     display: none;
 }
-
-
-
-/**
- * 서브 메뉴 영역 설정
- * -------------------- */
-
-/**
- *
- * -------------------- */

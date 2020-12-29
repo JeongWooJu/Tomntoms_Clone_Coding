@@ -125,6 +125,7 @@
 
     list-style: none;
     overflow: hidden;
+    text-align: center;
 
 
 }
@@ -133,7 +134,7 @@
     position: relative;
 
     display: inline-block;
-    left: 312px;
+    right: 440px;
     width: 54px;
     height: 2px;
     margin: 0 3px;
@@ -216,7 +217,7 @@
 
 .slick-dots li {
     position: relative;
-    left: 615px;
+    left: 600px;
     display: inline-block;
 
     width: 16px;

@@ -134,6 +134,10 @@
                 <a href="#"><img src="uploads/banner/6_lg.jpg" /></a>
                 <a href="#"><img src="uploads/banner/7_lg.jpg" /></a>
             </div>
+            <div class="slider-box">
+                <span class="slide-number" id="event">1 / 7</span>
+                <button class="button pause event-plugin" id="pause">PAUSE</button>
+            </div>
             <div class="vertical-container">
                 <div class="notice-box">
                     <p>Notice</p>
@@ -182,6 +186,10 @@
                         <div class="overlay"></div>
                     </a><span>블랙 프레즐 출시</span></li>
             </ul>
+            <div class="slider-box">
+                <span class="slide-number" id="menu" data-aos="fade-up">1 / 5</span>
+                <button class="button pause menu-plugin" id="pause" data-aos="fade-up">PAUSE</button>
+            </div>
         </div>
         <!-- D (회사 소개) -->
         <div class="intro clearfix">
@@ -220,6 +228,10 @@
                         <div class="overlay"></div>
                     </a><span>핸드드립 커피 3종 세트</span></li>
             </ul>
+            <div class="slider-box">
+                <span class="slide-number" id="mdspick" data-aos="fade-up">1 / 5</span>
+                <button class="button pause mdspick-plugin" id="pause" data-aos="fade-up">PAUSE</button>
+            </div>
         </div>
         <!-- F (SNS 갤러리) -->
         <div class="sns clearfix">
@@ -299,11 +311,42 @@
     <script type="text/javascript">
     /* 스크롤 하면 아래에서부터 slide-in 하면서 fade-in 하는 요소들 */
     AOS.init({
-        offset: 120,
-        duration: 500,
+        offset: 50,
+        duration: 1000,
         easin: 'ease-in',
         once: true
     });
+
+    /* 슬라이드 페이지 번호를 나타내는 함수 */
+    function pagination() {
+        var index1 = $('.banner .slick-active>button').html();
+        $('#event').html(index1 + " / 7");
+        var index2 = $('.menu .slick-active>button').html();
+        $('#menu').html(index2 + " / 5");
+        var index3 = $('.mdspick .slick-active>button').html();
+        $('#mdspick').html(index3 + " / 5");
+    }
+
+    $(function() {
+        pagination();
+        setInterval(function() {
+            pagination();
+        }, 100);
+    });
+
+
+    /* 슬라이드 일시정지 및 재생 버튼 기능 구현 */
+    function playControll(target, targetSlide) {
+        if (target.attr('id') == "pause") {
+            target.attr('id', 'play');
+            targetSlide.slick('slickPause');
+            console.log("pause click");
+        } else {
+            target.attr('id', 'pause');
+            targetSlide.slick('slickPlay');
+            console.log("play click");
+        }
+    }
 
     /* 서브 메뉴 펼치기 액션 */
     $(function() {
@@ -312,6 +355,7 @@
         });
     });
 
+
     /* 이벤트 배너 액션  */
     $('.fade').slick({
         dots: true,
@@ -319,10 +363,17 @@
         speed: 500,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         cssEase: 'linear',
         arrows: false,
-        dotsClass: "slick-bars"
+        dotsClass: "slick-bars",
+        pauseOnHover: false
+    });
+
+    /* 이벤트 배너 재생 버튼 */
+    $('.event-plugin').click(function() {
+        playControll($(this), $('.fade'));
+        $(this).toggleClass('play pause');
     });
 
     /* 메뉴 배너 액션 */
@@ -335,6 +386,12 @@
         pauseOnHover: false
     });
 
+    /* 메뉴 배너 재생 버튼 */
+    $('.menu-plugin').click(function() {
+        playControll($(this), $('.autoplay-1'));
+        $(this).toggleClass('play pause');
+    });
+
     /* 추천 제품 배너 액션 */
     $('.autoplay-2').slick({
         dots: true,
@@ -343,6 +400,12 @@
         autoplay: true,
         autoplaySpeed: 3000,
         pauseOnHover: false
+    });
+
+    /* 추천 제품 배너 재생 버튼 */
+    $('.mdspick-plugin').click(function() {
+        playControll($(this), $('.autoplay-2'));
+        $(this).toggleClass('play pause');
     });
 
     /* 공지사항 배너 액션 */
@@ -361,7 +424,6 @@
     });
 
     /* 배너 항목에 마우스 오버하면 흰 테두리가 생기는 액션 */
-
     $(function() {
         $('.menu-element').hover(
             function(e) {

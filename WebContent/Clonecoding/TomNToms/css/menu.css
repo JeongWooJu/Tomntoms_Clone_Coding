@@ -113,3 +113,24 @@
     letter-spacing: -1px;
     width: auto;
 }
+
+/**
+ * 메뉴 배너 > 슬라이드 번호와 재생 버튼 위치 조정
+ * -------------------- */
+.menu .slider-box {
+    width: auto;
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+    top: -670px;
+    text-align: right;
+}
+
+#menu {
+    position: absolute;
+    right: 190px;
+    top: -1px;
+}
+.menu-plugin {
+    right: 0px;
+}
